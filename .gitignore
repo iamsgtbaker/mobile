@@ -1,0 +1,8 @@
+.DS_Store
+.claude/
+github
+github.pub
+*.pem
+*.key
+id_rsa
+id_ed25519
