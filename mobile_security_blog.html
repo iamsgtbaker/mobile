@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8 Steps to Secure Your Mobile Device</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  color: #1a1a1a;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  background: #fff;
+}
+h1 {
+  color: #1a3a5c;
+  font-size: 28px;
+  border-bottom: 3px solid #1a3a5c;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+h2 {
+  color: #1a3a5c;
+  font-size: 21px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+p { margin: 12px 0; }
+a { color: #2a6496; }
+a:hover { color: #1a3a5c; }
+hr {
+  border: none;
+  border-top: 1px solid #d0d0d0;
+  margin: 35px 0;
+}
+ul {
+  margin: 8px 0;
+  padding-left: 24px;
+}
+li { margin: 6px 0; }
+ul ul {
+  margin: 4px 0;
+  padding-left: 20px;
+}
+.take-action {
+  background: #e8f0f8;
+  border: 2px solid #3a6fa0;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+.take-action-label {
+  font-weight: bold;
+  color: #1a3a5c;
+  font-size: 15px;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.take-action ul { margin: 6px 0 0 0; }
+.threat-intel-toggle {
+  background: none;
+  border: none;
+  color: #2a6496;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 0;
+  margin: 10px 0;
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.threat-intel-toggle:hover { color: #1a3a5c; }
+.threat-intel {
+  display: none;
+  background: #f7f7f7;
+  border-left: 3px solid #b0b0b0;
+  padding: 12px 16px;
+  margin: 8px 0 16px 0;
+  font-size: 14px;
+  color: #333;
+}
+.threat-intel p { margin: 8px 0; }
+.intro { font-size: 16px; }
+.sign-off {
+  font-style: italic;
+  color: #555;
+  margin-top: 30px;
+}
+.sources {
+  font-size: 13px;
+  margin-top: 20px;
+}
+.sources ul { padding-left: 20px; }
+.sources li { margin: 4px 0; }
+.bottom-line {
+  background: #f0f4f8;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 30px 0;
+}
+</style>
+</head>
+<body>
+
+<h1>8 Steps to Secure Your Mobile Device</h1>
+
+<div class="intro">
+<p>Think about the last time you went a full hour without reaching for your phone. Most of us can't. Our mobile devices are how we check email, join meetings, authenticate into work systems, message our families, manage our finances, and navigate our daily lives. They've become the single device we depend on most at home and at work. That makes taking mobile security seriously more important than ever.</p>
+
+<p>The good news is that both Apple and Google have built genuinely strong security and privacy foundations into the iOS and Android platforms. Hardware encryption, biometric authentication, app sandboxing, and real-time threat detection all work to protect you out of the box.</p>
+
+<p>But platform security only goes so far. Outdated software, a click on a dodgy link, or a misconfigured app permission can undo these measures in seconds.</p>
+
+<p>In this post, the Mobile Threat Center (MTC) outlines 8 practical steps for protecting your personal and work devices today, backed by the threat intelligence that shows why each one matters. None of them require deep technical expertise. Most take a few minutes. Together, they close the gaps that attackers are actively exploiting.</p>
+</div>
+
+<hr>
+
+<!-- SECTION 1 -->
+<h2>1. Keep Your OS and Apps Up to Date</h2>
+
+<p>This is the single most impactful thing you can do. Software updates patch the exact vulnerabilities that attackers exploit, and right now the threat is not theoretical. Google TAG and Mandiant have documented that commercial spyware vendors routinely exploit n-day vulnerabilities (those already patched) precisely because they know many users delay updates. Every day you defer an update is a day you remain exposed to a known, fixable weakness.</p>
+
+<div class="take-action">
+  <p class="take-action-label">Take Action</p>
+  <ul>
+    <li>Enable automatic updates and install them the day they arrive. This applies to both your operating system and your apps.
+      <ul>
+        <li><strong>iOS:</strong> Settings → General → Software Update → <a href="https://support.apple.com/en-gb/guide/iphone/iph3e504502/ios">Automatic Updates</a></li>
+        <li><strong>Android:</strong> Settings → System → Software Update → <a href="https://support.google.com/android/answer/7680439">enable auto-download and install</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<button class="threat-intel-toggle" onclick="toggle('ti1')">Read the Threat Intelligence ▸</button>
+<div class="threat-intel" id="ti1">
+  <p>In March 2026, Google's Threat Intelligence Group and iVerify independently disclosed two spy-grade iOS exploit kits. Coruna, containing 23 exploits across five full attack chains, was originally built for a commercial surveillance vendor before proliferating to state-sponsored and criminal groups, making it the first observed mass exploitation against iOS devices. DarkSword, uncovered weeks later, targets more recent iOS versions (18.4 through 18.7) and has been used by multiple threat actors globally.</p>
+  <p>On 23 March, DarkSword's source code was leaked on GitHub. Within days, Proofpoint observed a state-sponsored group deploying it in spear-phishing campaigns.</p>
+  <p>Critically, every vulnerability in both kits had already been patched. Devices running current software were protected. But the scale of exposure is enormous: as of February 2026, 34% of all active iPhones are not running the latest software. That is over 500 million devices potentially running vulnerable versions. In response, Apple has taken the unprecedented step of sending Lock Screen notifications urging immediate updates.</p>
+</div>
+
+<hr>
+
+<!-- SECTION 2 -->
+<h2>2. Restart Your Phone Regularly</h2>
+
+<p>A key difference between traditional malware and the advanced mobile exploits we see today is that they typically lack persistence. Rather than embedding themselves permanently on the device, they run entirely in memory. This makes them stealthier, but it also creates a weakness: a reboot clears them.</p>
+
+<div class="take-action">
+  <p class="take-action-label">Take Action</p>
+  <ul>
+    <li>Make a daily reboot part of your routine. It takes 30 seconds and clears any non-persistent threat running in memory.</li>
+  </ul>
+</div>
+
+<button class="threat-intel-toggle" onclick="toggle('ti2')">Read the Threat Intelligence ▸</button>
+<div class="threat-intel" id="ti2">
+  <p>Amnesty International's forensic analysis of Pegasus — the NSO Group's flagship spyware, found operating in 45 countries — has confirmed that recent implants operate without persistence. A reboot removes the active infection and forces the attacker to re-exploit the device from scratch. The same is true of the Coruna and DarkSword exploit kits discussed above.</p>
+</div>
+
+<hr>
+
+<!-- SECTION 3 -->
+<h2>3. Be Skeptical of Links, Calls, and Messages</h2>
+
+<p>Most people know what phishing is — a fraudulent email designed to trick you into clicking a link or handing over credentials. But on mobile devices, the same attacks arrive through different channels, and they are far more effective.</p>
+
+<p>Smishing is phishing delivered via SMS or messaging apps: a text that looks like it comes from your bank, a delivery service, or a government agency, urging you to tap a link. Vishing is the voice equivalent — a phone call from someone impersonating IT support, your bank, or a senior colleague, pressuring you to share a password, an MFA code, or account details. Both exploit the trust and urgency that mobile communication creates. People are far more likely to act on a text or answer a call than they are to click a suspicious email on their laptop, and attackers know it.</p>
+
+<div class="take-action">
+  <p class="take-action-label">Take Action</p>
+  <ul>
+    <li>Never tap links in unexpected texts. Never give personal information, passwords, or MFA codes to an unsolicited caller — even if the caller ID looks legitimate. If something feels urgent and unexpected, hang up and contact the organization directly using a number you look up yourself.
+      <ul>
+        <li><strong>iOS:</strong> Enable <a href="https://support.apple.com/en-gb/guide/iphone/iph203ab0be4/ios">Filter Unknown Senders</a> in Messages and <a href="https://support.apple.com/en-gb/guide/iphone/iphe4b0f7ba8/ios">Silence Unknown Callers</a></li>
+        <li><strong>Android:</strong> Enable <a href="https://support.google.com/messages/answer/9061432">spam protection in Google Messages</a> and <a href="https://support.google.com/phoneapp/answer/9118387">Call Screen</a> on Pixel devices</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<button class="threat-intel-toggle" onclick="toggle('ti3')">Read the Threat Intelligence ▸</button>
+<div class="threat-intel" id="ti3">
+  <p>Zimperium's 2025 Global Threat Report found that 80% of fraud events now occur through online or mobile platforms. The 2025 Consumer Cyber Readiness Report found that 30% of people who encountered a digital scam in the past year said it began with a text or messaging app, a 20% increase from the year before.</p>
+  <p>What makes the latest wave particularly dangerous is AI. CrowdStrike's 2025 Global Threat Report found that AI-generated phishing messages achieve a 54% click-through rate, compared to just 12% for human-written ones. Voice phishing surged 442% in the second half of 2024, driven by AI-generated voice clones that can convincingly impersonate executives, IT help desks, and bank representatives.</p>
+</div>
+
+<hr>
+
+<!-- SECTION 4 -->
+<h2>4. Guard Your Phone Like You Guard Your Wallet</h2>
+
+<p>Phone snatching — the theft of a device from a user's hand while it is unlocked and in use — has evolved from street crime into a sophisticated cyber-physical attack. The phone itself is no longer the prize. What thieves are after is the unlocked access to everything inside it: banking apps, email, authenticator codes, saved passwords, and personal data. Within minutes, a thief with an unlocked phone can drain bank accounts and take over your digital identity.</p>
+
+<div class="take-action">
+  <p class="take-action-label">Take Action</p>
+  <ul>
+    <li><strong>Be aware of your surroundings</strong> — avoid using your phone near busy roads or in crowds; use a phone grip, lanyard, or crossbody case</li>
+    <li><strong>Enable stolen device protection</strong> — limits what a thief can do with an unlocked phone:
+      <ul>
+        <li><strong>iOS:</strong> Settings → Face ID &amp; Passcode → <a href="https://support.apple.com/en-gb/120340">Stolen Device Protection</a> (set to "Always")</li>
+        <li><strong>Android:</strong> Settings → Security &amp; Privacy → <a href="https://support.google.com/android/answer/16285498">Identity Check</a></li>
+      </ul>
+    </li>
+    <li><strong>Enable theft detection</strong> — locks your phone automatically if it is snatched:
+      <ul>
+        <li><strong>Android:</strong> Settings → Security &amp; Privacy → Device Unlock → <a href="https://support.google.com/android/answer/15604042">Theft Detection Lock</a> (must be manually enabled)</li>
+      </ul>
+    </li>
+    <li><strong>Use biometrics in public</strong> — unlock with Face ID or fingerprint, not your passcode, so there is nothing to observe</li>
+    <li><strong>Set separate authentication on banking and sensitive apps</strong> — use Face ID or a distinct PIN within each one</li>
+    <li><strong>If stolen, act immediately</strong> — mark as lost via <a href="https://www.icloud.com/find">iCloud.com</a> or <a href="https://www.google.com/android/find">android.com/find</a>, change your Apple ID or Google Account password, suspend the SIM, and file a police report with the IMEI</li>
+  </ul>
+</div>
+
+<button class="threat-intel-toggle" onclick="toggle('ti4')">Read the Threat Intelligence ▸</button>
+<div class="threat-intel" id="ti4">
+  <p>In England and Wales, an estimated 78,000 people had phones snatched on the street in the year ending March 2024 — roughly 200 per day, a 153% increase year-over-year. In London alone, over 70,000 phones were stolen in 2024. In the US, approximately 1.4 million phones were stolen in 2023.</p>
+  <p>The financial damage goes far beyond the device. A Wall Street Journal investigation documented a systematic theft ring in Minneapolis where criminals observed victims entering their passcode in bars, stole the phone, then changed the Apple ID password, disabled Find My, and drained bank accounts, all within minutes. In London, the method is industrialized: thieves on e-bikes snatch phones from pedestrians, immediately bag them in Faraday pouches to block GPS tracking, and funnel them to middlemen who exploit or resell the devices overseas.</p>
+</div>
+
+<hr>
+
+<!-- SECTION 5 -->
+<h2>5. Use Strong Authentication and a Password Manager</h2>
+
+<p>Attackers don't need to hack your password if they can steal it, guess it, or reuse one you've already leaked. The reality is that most of us have passwords sitting in old data breaches, and if you've reused any of them, a single breach gives attackers access to multiple accounts. Passkeys and multi-factor authentication exist to close that gap. A password manager ensures every account has a unique, complex password you don't need to remember.</p>
+
+<div class="take-action">
+  <p class="take-action-label">Take Action</p>
+  <ul>
+    <li><strong>Switch to passkeys</strong> for any service that supports them — they are built into both iOS and Android and cannot be phished</li>
+    <li><strong>Use an authenticator app or hardware key</strong> for everything else; reserve SMS-based codes only for services that offer no alternative</li>
+    <li><strong>Use a password manager</strong> to generate and store a unique, complex password for every account. Apple Keychain and Google Password Manager are solid built-in options. Third-party managers like 1Password or Bitwarden offer cross-platform flexibility and require their own separate authentication — which matters if your phone is ever stolen.</li>
+  </ul>
+  <ul>
+    <li><strong>iOS:</strong> Settings → [Your Name] → Sign-In &amp; Security → <a href="https://support.apple.com/en-gb/guide/iphone/iphf538ea8d0/ios">Passkeys and Security Keys</a></li>
+    <li><strong>Android:</strong> Google Account → Security → <a href="https://support.google.com/accounts/answer/13548313">Passkeys and Security Keys</a></li>
+  </ul>
+</div>
+
+<button class="threat-intel-toggle" onclick="toggle('ti5')">Read the Threat Intelligence ▸</button>
+<div class="threat-intel" id="ti5">
+  <p>CrowdStrike's 2025 Global Threat Report found that 79% of initial access attacks were malware-free. Attackers are not breaking through technical defenses, they are walking through doors opened by stolen or reused credentials. Credential stuffing, where attackers take breached username and password pairs and try them across other services, is automated and operates at massive scale.</p>
+  <p>Even when users do have multi-factor authentication in place, the wrong type can be bypassed. SMS-based verification codes are vulnerable to SIM swapping — where an attacker convinces your carrier to transfer your number to their device, intercepting every code sent to it. The FBI tracked $26 million in SIM-swap losses in 2024, and the UK's Cifas reported a 1,055% increase in unauthorized SIM swaps in the same year. Passkeys, authenticator apps, and hardware keys are not vulnerable to SIM swapping because they do not rely on your phone number to deliver codes.</p>
+</div>
+
+<hr>
+
+<!-- SECTION 6 -->
+<h2>6. Use Only Official App Stores and Audit Permissions</h2>
+
+<p>Sideloaded apps — those installed from outside the official stores — are a major malware vector. But even within official stores, apps routinely request permissions far beyond what they need. A weather app does not need your contacts. A game does not need your microphone. Every unnecessary permission is an additional path for data to leave your device — whether through the app developer, a third-party SDK embedded in the app, or a future compromise.</p>
+
+<div class="take-action">
+  <p class="take-action-label">Take Action</p>
+  <ul>
+    <li>Install apps exclusively from the Apple App Store or Google Play Store. Review permissions regularly and revoke anything that is not essential — particularly location, camera, microphone, contacts, and file access. Both platforms now auto-reset permissions for apps you haven't used recently, but a manual review remains good practice.
+      <ul>
+        <li><strong>iOS:</strong> Settings → Privacy &amp; Security → <a href="https://support.apple.com/en-gb/guide/iphone/iph251e92810/ios">review permissions by category</a></li>
+        <li><strong>Android:</strong> Settings → Privacy → <a href="https://support.google.com/android/answer/9431959">Permission Manager</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<button class="threat-intel-toggle" onclick="toggle('ti6')">Read the Threat Intelligence ▸</button>
+<div class="threat-intel" id="ti6">
+  <p>The risk from sideloading is not theoretical. Google's own analysis found that sideloaded apps contain over 50 times more malware than Play Store apps — and in 2025, Play Protect identified 27 million of them, double the previous year.</p>
+</div>
+
+<hr>
+
+<!-- SECTION 7 -->
+<h2>7. Harden Privacy Settings and Limit Background Data Sharing</h2>
+
+<p>Every piece of data your phone exposes is a potential attack surface — whether it is exploited by advertisers, data brokers, or threat actors. Your advertising ID tracks you across apps. Lock screen notifications display MFA codes and messages to anyone nearby. Your phone number anchors your identity across MFA, banking, and account recovery. And your location data flows silently to third parties through apps you use every day. Reducing what your device shares by default limits what an attacker, or an entire industry, can use against you.</p>
+
+<div class="take-action">
+  <p class="take-action-label">Take Action</p>
+
+  <p><strong>Delete your advertising ID:</strong></p>
+  <ul>
+    <li><strong>iOS:</strong> Settings → Privacy &amp; Security → Tracking → <a href="https://support.apple.com/en-gb/guide/iphone/iph4f4cbd242/ios">disable "Allow Apps to Request to Track"</a></li>
+    <li><strong>Android:</strong> Settings → Security &amp; Privacy → Privacy Controls → Ads → <a href="https://support.google.com/android/answer/3118621">Delete advertising ID</a></li>
+  </ul>
+
+  <p><strong>Disable lock screen notification previews</strong> — MFA codes, message content, and calendar details visible on a locked screen can be read by anyone nearby.</p>
+  <ul>
+    <li><strong>iOS:</strong> Settings → Notifications → Show Previews → <a href="https://support.apple.com/en-gb/guide/iphone/iph7c3d2150/ios">When Unlocked</a></li>
+    <li><strong>Android:</strong> Settings → Notifications → <a href="https://support.google.com/android/answer/9079661">Sensitive Notifications → off</a></li>
+  </ul>
+
+  <p><strong>Protect your phone number</strong> — set a PIN or passcode with your carrier to prevent unauthorized porting, and request a port-freeze or number-lock on your account.</p>
+
+  <p><strong>Restrict location sharing</strong> — set location permissions to "While Using" or "Never" for apps that do not genuinely need continuous access.</p>
+  <ul>
+    <li><strong>iOS:</strong> Settings → Privacy &amp; Security → <a href="https://support.apple.com/en-gb/guide/iphone/iph3dd5f9be/ios">Location Services</a></li>
+    <li><strong>Android:</strong> Settings → Privacy → Permission Manager → <a href="https://support.google.com/android/answer/6179507">Location</a></li>
+  </ul>
+
+  <p><strong>Run a quarterly security review</strong> — both platforms offer built-in tools that walk you through connected devices, active sessions, app permissions, and recovery settings.</p>
+  <ul>
+    <li><strong>iOS:</strong> Settings → Privacy &amp; Security → <a href="https://support.apple.com/en-gb/guide/iphone/ips2aad835e1/ios">Safety Check</a></li>
+    <li><strong>Google:</strong> <a href="https://myaccount.google.com/security-checkup">Security Checkup</a></li>
+  </ul>
+</div>
+
+<button class="threat-intel-toggle" onclick="toggle('ti7')">Read the Threat Intelligence ▸</button>
+<div class="threat-intel" id="ti7">
+  <p>Most people assume their data stays within the apps they use. NowSecure found that 75% of iOS apps and 70% of Android apps collect sensitive data and share it with third-party tracking domains. That data feeds an industry operating at staggering scale: a 2025 investigation by netzpolitik.org obtained a single day's sample from one US data broker containing 47 million mobile advertising IDs linked to 380 million location data points across 137 countries. A separate investigation found that journalists could track the movements of top EU officials using location data offered as a free sample by a data broker.</p>
+</div>
+
+<hr>
+
+<!-- SECTION 8 -->
+<h2>8. Enable Advanced Protection Programs</h2>
+
+<p>Both Apple and Google offer enhanced security modes that go well beyond default settings. These were originally designed for users at elevated risk — journalists, activists, executives — but given the threats outlined in this post, they are worth considering for anyone who wants the strongest available protection on their platform.</p>
+
+<p>These modes involve trade-offs in convenience. Apple Lockdown Mode blocks most message attachments, restricts FaceTime to known contacts, prevents wired connections when locked, and disables complex web technologies — meaning some websites may not render correctly. Google Advanced Protection enforces Play Protect, blocks sideloading, disables 2G connectivity, forces HTTPS in Chrome, and enables automatic inactivity reboot after 72 hours — some third-party apps that rely on accessibility permissions may not function. For most users, these limitations are minor relative to the protection gained.</p>
+
+<p>It is also worth considering a mobile threat detection (MTD) tool to periodically scan your device for indicators of compromise. Protection modes harden your device, but they do not detect threats that may already be present.</p>
+
+<div class="take-action">
+  <p class="take-action-label">Take Action</p>
+  <ul>
+    <li><strong>Enable Lockdown Mode (iOS):</strong> Settings → Privacy &amp; Security → <a href="https://support.apple.com/en-gb/105120">Lockdown Mode</a></li>
+    <li><strong>Enable Advanced Protection (Android):</strong> Settings → Security &amp; Privacy → <a href="https://support.google.com/android/answer/16339980">Advanced Protection</a></li>
+    <li><strong>Scan your device periodically</strong> with a mobile threat detection tool such as <a href="https://iverify.io">iVerify Basic</a> (free, iOS and Android)</li>
+  </ul>
+</div>
+
+<button class="threat-intel-toggle" onclick="toggle('ti8')">Read the Threat Intelligence ▸</button>
+<div class="threat-intel" id="ti8">
+  <p>These modes deliver measurable protection against the most serious threats in the wild today. In January 2026, the FBI's forensic team confirmed in court documents that it could not extract data from a journalist's iPhone that had Lockdown Mode enabled. Both the Coruna and DarkSword exploit kits — the most significant iOS threats discovered in 2025–2026 — skip execution entirely on devices with Lockdown Mode active. On Android, the EFF recommends Advanced Protection for anyone at elevated risk, and Google Play Protect — which is enforced under Advanced Protection — scans over 350 billion apps daily.</p>
+</div>
+
+<hr>
+
+<!-- BOTTOM LINE -->
+<div class="bottom-line">
+  <h2 style="margin-top:0;">The Bottom Line</h2>
+  <p>The threats are real, but so are the defenses. Start with three steps today: update your OS, enable Stolen Device Protection or Identity Check, and restart your phone. Each one closes a door that an attacker would otherwise walk through.</p>
+  <p>For more information or guidance on any of the advice in this post, reach out to the Mobile Threat Center team. We're happy to discuss and guide you through this.</p>
+</div>
+
+<hr>
+
+<p class="sign-off">Cyber Threat Operations — Mobile Threat Center, March 2026</p>
+
+<div class="sources">
+<p><strong>Sources:</strong></p>
+<ul>
+  <li><a href="https://cloud.google.com/blog/topics/threat-intelligence/darksword-ios-exploit-chain">Google Threat Intelligence Group (GTIG), "The Proliferation of DarkSword," March 2026</a></li>
+  <li><a href="https://iverify.io/blog/darksword-ios-exploit-kit-explained">iVerify, "Inside DarkSword: A New iOS Exploit Kit," March 2026</a></li>
+  <li><a href="https://iverify.io/press-releases/first-known-mass-ios-attack">iVerify, "Coruna: Inside the Nation-State-Grade iOS Exploit Kit," March 2026</a></li>
+  <li><a href="https://thehackernews.com/2026/03/ta446-deploys-leaked-darksword-ios.html">Proofpoint / The Hacker News, "TA446 Deploys DarkSword iOS Exploit Kit," March 2026</a></li>
+  <li><a href="https://techcrunch.com/2026/03/23/someone-has-publicly-leaked-an-exploit-kit-that-can-hack-millions-of-iphones/">TechCrunch, "Someone has publicly leaked an exploit kit that can hack millions of iPhones," March 2026</a></li>
+  <li><a href="https://developer.apple.com/support/app-store/">Apple, iOS adoption data, February 2026</a></li>
+  <li><a href="https://blog.google/threat-analysis-group/commercial-surveillance-vendors-google-tag-report/">Google TAG &amp; Mandiant, "Buying Spying: Commercial Surveillance Vendors," 2024</a></li>
+  <li><a href="https://www.amnesty.org/en/latest/research/2021/07/forensic-methodology-report-how-to-catch-nso-groups-pegasus/">Amnesty International, forensic methodology for Pegasus detection</a></li>
+  <li><a href="https://citizenlab.ca/research/hide-and-seek-tracking-nso-groups-pegasus-spyware-to-operations-in-45-countries/">Citizen Lab, "Hide and Seek: Tracking NSO Group's Pegasus Spyware to Operations in 45 Countries"</a></li>
+  <li><a href="https://www.crowdstrike.com/en-us/resources/reports/">CrowdStrike, 2025 Global Threat Report</a></li>
+  <li><a href="https://www.ic3.gov/AnnualReport/Reports/2024_IC3Report.pdf">FBI Internet Crime Complaint Center (IC3), Annual Report 2024</a></li>
+  <li><a href="https://zimperium.com/resources/mobile-becomes-the-chosen-attack-vector-for-enterprises-zimperium-researchers-find">Zimperium, 2025 Global Mobile Threat Report</a></li>
+  <li><a href="https://www.consumerreports.org/electronics/digital-security/">2025 Consumer Cyber Readiness Report</a></li>
+  <li><a href="https://www.wsj.com/tech/personal-tech/">Wall Street Journal (Stern &amp; Nguyen), iPhone theft investigations, 2023</a></li>
+  <li><a href="https://commonslibrary.parliament.uk/">UK House of Commons Library, Phone Theft (CDP-2025-0150)</a></li>
+  <li><a href="https://www.met.police.uk/">Metropolitan Police, operational data on phone theft in London</a></li>
+  <li><a href="https://www.cifas.org.uk/research/">Cifas, Fraudscape 2025</a></li>
+  <li><a href="https://developers.google.com/android/play-protect">Google, Play Protect documentation</a></li>
+  <li><a href="https://security.googleblog.com/2026/02/keeping-google-play-android-app-ecosystem-safe-2025.html">Google Security Blog, "Keeping Google Play &amp; Android App Ecosystems Safe in 2025," February 2026</a></li>
+  <li><a href="https://www.eff.org/deeplinks/2025/06/googles-advanced-protection-arrives-android-should-you-use-it">EFF, "Google's Advanced Protection Arrives on Android: Should You Use It?" June 2025</a></li>
+  <li><a href="https://www.nowsecure.com/">NowSecure, mobile app privacy research 2025</a></li>
+  <li><a href="https://netzpolitik.org/2025/databroker-files-new-data-set-reveals-40000-apps-behind-location-tracking/">netzpolitik.org, "Databroker Files: New data set reveals 40,000 apps behind location tracking," January 2025</a></li>
+  <li><a href="https://techcrunch.com/2025/11/04/phone-location-data-of-top-eu-officials-for-sale-report-finds/">netzpolitik.org / TechCrunch, "Phone location data of top EU officials for sale," November 2025</a></li>
+  <li><a href="https://iverify.io/blog/iverify-mobile-threat-investigation-uncovers-new-pegasus-samples">iVerify, "Mobile Threat Investigation Uncovers New Pegasus Samples," 2024</a></li>
+</ul>
+</div>
+
+<script>
+function toggle(id) {
+  var el = document.getElementById(id);
+  var btn = el.previousElementSibling;
+  if (el.style.display === 'block') {
+    el.style.display = 'none';
+    btn.textContent = 'Read the Threat Intelligence ▸';
+  } else {
+    el.style.display = 'block';
+    btn.textContent = 'Hide Threat Intelligence ▾';
+  }
+}
+</script>
+
+</body>
+</html>
